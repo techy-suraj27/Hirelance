@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HIRELANCE</title>
+
+    <meta
+        name="description"
+        content="HIRELANCE is a modern freelance marketplace connecting talented freelancers with employers."
+    >
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Draft1.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar" id="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            HIRE<span>LANCE</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#home">Home</a>
+            <a href="#freelancers">Freelancers</a>
+            <a href="#employers">Employers</a>
+            <a href="#gigs">Gigs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <div class="mobile-auth">
+                <button class="btn btn-outline" onclick="openAuth('login')">
+                    Login
+                </button>
+
+                <button class="btn btn-primary" onclick="openAuth('signup')">
+                    Sign Up
+                </button>
+            </div>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn theme-toggle"
+                id="themeToggle"
+                title="Toggle theme"
+            >
+                ☼
+            </button>
+
+            <button
+                class="btn btn-outline desktop-only"
+                onclick="openAuth('login')"
+            >
+                Login
+            </button>
+
+            <button
+                class="btn btn-primary desktop-only"
+                onclick="openAuth('signup')"
+            >
+                Sign Up
+            </button>
+
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Open navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-shape shape-one"></div>
+    <div class="hero-bg-shape shape-two"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                The modern freelance marketplace
+            </div>
+
+            <h1>
+                Where
+                <span class="gradient-text">Talent</span>
+                Meets
+                <span class="gradient-text">Opportunity.</span>
+            </h1>
+
+            <p>
+                Discover talented freelancers, showcase your skills,
+                and find the perfect opportunities to bring ideas to life.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="btn btn-primary btn-large"
+                    onclick="scrollToSection('freelancers')"
+                >
+                    Find a Freelancer →
+                </button>
+
+                <button
+                    class="btn btn-glass btn-large"
+                    onclick="openAuth('signup', 'freelancer')"
+                >
+                    Become a Freelancer
+                </button>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div class="avatar-stack">
+                    <span>AS</span>
+                    <span>RM</span>
+                    <span>KV</span>
+                    <span>+</span>
+                </div>
+
+                <div>
+                    <strong>10K+</strong>
+                    <small>creative professionals</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero visual -->
+
+        <div class="hero-visual reveal">
+
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+
+            <div class="profile-showcase">
+
+                <div class="showcase-top">
+                    <span class="status-pill">
+                        <i></i> Available for Work
+                    </span>
+
+                    <span class="verified">✓</span>
+                </div>
+
+                <div class="hero-avatar avatar-purple">
+                    AS
+                </div>
+
+                <h3>Aarav Sharma</h3>
+
+                <p>Senior Graphic Designer</p>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>4.9</span>
+                </div>
+
+                <div class="skill-row">
+                    <span>Branding</span>
+                    <span>UI Design</span>
+                    <span>Illustration</span>
+                </div>
+
+                <button class="btn btn-primary full-width">
+                    View Profile
+                </button>
+
+            </div>
+
+
+            <div class="floating-card earnings-card">
+
+                <div class="floating-icon">₹</div>
+
+                <div>
+                    <small>Earned this month</small>
+                    <strong>₹45K</strong>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card gigs-card">
+
+                <div class="floating-icon">✦</div>
+
+                <div>
+                    <strong>120+</strong>
+                    <small>Completed Gigs</small>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card top-card">
+
+                🏆
+                <div>
+                    <strong>Top Designer</strong>
+                    <small>#1 this month</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PLATFORM STATS
+========================= -->
+
+<section class="stats-strip">
+
+    <div class="container stats-grid">
+
+        <div>
+            <strong>10K+</strong>
+            <span>Freelancers</span>
+        </div>
+
+        <div>
+            <strong>5K+</strong>
+            <span>Employers</span>
+        </div>
+
+        <div>
+            <strong>25K+</strong>
+            <span>Projects Completed</span>
+        </div>
+
+        <div>
+            <strong>₹50L+</strong>
+            <span>Paid to Freelancers</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
+<section class="section light-section" id="how">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">HOW IT WORKS</span>
+
+            <h2>
+                One platform.
+                <span class="gradient-text">Two possibilities.</span>
+            </h2>
+
+            <p>
+                Whether you're building your career or building your next
+                project, HIRELANCE makes collaboration simple.
+            </p>
+
+        </div>
+
+
+        <div class="audience-grid">
+
+            <div class="audience-card reveal">
+
+                <div class="audience-icon purple-icon">✦</div>
+
+                <h3>For Freelancers</h3>
+
+                <p>
+                    Turn your skills into opportunities and build a
+                    professional presence.
+                </p>
+
+                <div class="steps">
+
+                    <div class="step">
+                        <span>01</span>
+                        <div>
+                            <strong>Create your profile</strong>
+                            <small>Show the world what you can do.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>02</span>
+                        <div>
+                            <strong>Showcase your portfolio</strong>
+                            <small>Display your best work.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>03</span>
+                        <div>
+                            <strong>List your gigs</strong>
+                            <small>Package your skills into services.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>04</span>
+                        <div>
+                            <strong>Get hired & earn</strong>
+                            <small>Turn opportunities into income.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="openAuth('signup', 'freelancer')"
+                >
+                    Start Freelancing →
+                </button>
+
+            </div>
+
+
+            <div class="audience-card dark-audience reveal">
+
+                <div class="audience-icon white-icon">⌁</div>
+
+                <h3>For Employers</h3>
+
+                <p>
+                    Find the right creative and technical talent for
+                    your projects.
+                </p>
+
+                <div class="steps">
+
+                    <div class="step">
+                        <span>01</span>
+                        <div>
+                            <strong>Create an employer profile</strong>
+                            <small>Tell freelancers about your company.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>02</span>
+                        <div>
+                            <strong>Post a gig</strong>
+                            <small>Describe your project requirements.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>03</span>
+                        <div>
+                            <strong>Browse talented freelancers</strong>
+                            <small>Find people with the right skills.</small>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span>04</span>
+                        <div>
+                            <strong>Hire the right talent</strong>
+                            <small>Start building together.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button
+                    class="btn btn-white"
+                    onclick="openAuth('signup', 'employer')"
+                >
+                    Start Hiring →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section class="section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">DISCOVER TALENT</span>
+
+            <h2>
+                Explore Talent
+                <span class="gradient-text">by Category</span>
+            </h2>
+
+            <p>
+                From visual design to artificial intelligence,
+                find professionals who specialize in exactly what you need.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid" id="categoryGrid">
+
+            <button class="category-card active" data-category="all">
+                <span>✦</span>
+                <strong>All Talent</strong>
+                <small>Explore everyone</small>
+            </button>
+
+            <button class="category-card" data-category="Graphic Design">
+                <span>🎨</span>
+                <strong>Graphic Designers</strong>
+                <small>Branding & visual design</small>
+            </button>
+
+            <button class="category-card" data-category="Video Editing">
+                <span>🎬</span>
+                <strong>Video Editors</strong>
+                <small>Stories in motion</small>
+            </button>
+
+            <button class="category-card" data-category="Animation">
+                <span>🎞️</span>
+                <strong>Animators</strong>
+                <small>Motion & 3D</small>
+            </button>
+
+            <button class="category-card" data-category="VFX">
+                <span>🎥</span>
+                <strong>VFX Artists</strong>
+                <small>Visual effects</small>
+            </button>
+
+            <button class="category-card" data-category="Content Writing">
+                <span>✍️</span>
+                <strong>Content Writers</strong>
+                <small>Words that convert</small>
+            </button>
+
+            <button class="category-card" data-category="Content Creation">
+                <span>📱</span>
+                <strong>Content Creators</strong>
+                <small>Social media & UGC</small>
+            </button>
+
+            <button class="category-card" data-category="Web Development">
+                <span>💻</span>
+                <strong>Web Developers</strong>
+                <small>Web experiences</small>
+            </button>
+
+            <button class="category-card" data-category="Photography">
+                <span>📸</span>
+                <strong>Photographers</strong>
+                <small>Capture the moment</small>
+            </button>
+
+            <button class="category-card" data-category="Music">
+                <span>🎵</span>
+                <strong>Music & Audio</strong>
+                <small>Sound & production</small>
+            </button>
+
+            <button class="category-card" data-category="Marketing">
+                <span>📢</span>
+                <strong>Digital Marketers</strong>
+                <small>Grow your audience</small>
+            </button>
+
+            <button class="category-card" data-category="UI/UX">
+                <span>🖥️</span>
+                <strong>UI/UX Designers</strong>
+                <small>Human-centered design</small>
+            </button>
+
+            <button class="category-card" data-category="AI">
+                <span>🤖</span>
+                <strong>AI Specialists</strong>
+                <small>Build with intelligence</small>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TOP FREELANCERS
+========================= -->
+
+<section class="section light-section" id="freelancers">
+
+    <div class="container">
+
+        <div class="section-heading-row reveal">
+
+            <div>
+                <span class="section-label">COMMUNITY SPOTLIGHT</span>
+
+                <h2>
+                    Top Freelancers
+                    <span class="gradient-text">of the Month</span>
+                </h2>
+
+                <p>
+                    Meet some of the most active professionals on HIRELANCE.
+                </p>
+            </div>
+
+            <button
+                class="btn btn-outline"
+                onclick="document.getElementById('directory').scrollIntoView({behavior:'smooth'})"
+            >
+                View All Freelancers →
+            </button>
+
+        </div>
+
+
+        <div class="filter-tabs">
+
+            <button class="filter-tab active" data-sort="gigs">
+                Most Gigs
+            </button>
+
+            <button class="filter-tab" data-sort="earnings">
+                Highest Earnings
+            </button>
+
+            <button class="filter-tab" data-sort="rating">
+                Top Rated
+            </button>
+
+        </div>
+
+
+        <div class="freelancer-grid" id="topFreelancerGrid">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EMPLOYERS
+========================= -->
+
+<section class="section" id="employers">
+
+    <div class="container">
+
+        <div class="section-heading-row reveal">
+
+            <div>
+
+                <span class="section-label">HIRING POWER</span>
+
+                <h2>
+                    Top Employers
+                    <span class="gradient-text">of the Month</span>
+                </h2>
+
+                <p>
+                    Companies and teams creating opportunities for talented
+                    professionals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="employer-grid" id="employerGrid">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURED GIGS
+========================= -->
+
+<section class="section dark-section" id="gigs">
+
+    <div class="container">
+
+        <div class="section-heading-row reveal">
+
+            <div>
+
+                <span class="section-label">FIND YOUR NEXT PROJECT</span>
+
+                <h2>
+                    Featured
+                    <span class="gradient-text">Opportunities</span>
+                </h2>
+
+                <p>
+                    Fresh freelance projects from verified employers.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="gig-controls">
+
+            <select id="gigCategoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Animation">Animation</option>
+                <option value="Content Writing">Content Writing</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Web Development">Web Development</option>
+            </select>
+
+            <select id="gigBudgetFilter">
+                <option value="all">Any Budget</option>
+                <option value="low">Under ₹10K</option>
+                <option value="medium">₹10K – ₹30K</option>
+                <option value="high">Above ₹30K</option>
+            </select>
+
+        </div>
+
+
+        <div class="gig-grid" id="gigGrid">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FREELANCER DIRECTORY
+========================= -->
+
+<section class="section light-section" id="directory">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">FREELANCER DIRECTORY</span>
+
+            <h2>
+                Find the right
+                <span class="gradient-text">person for the job.</span>
+            </h2>
+
+            <p>
+                Search thousands of professionals by skill, category,
+                experience or availability.
+            </p>
+
+        </div>
+
+
+        <div class="directory-toolbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="freelancerSearch"
+                    placeholder="Search freelancers by name, skill or category..."
+                >
+
+            </div>
+
+            <select id="directoryCategory">
+                <option value="all">All Categories</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="VFX">VFX</option>
+                <option value="Content Writing">Content Writing</option>
+                <option value="Content Creation">Content Creation</option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="AI">AI</option>
+            </select>
+
+            <select id="directoryRating">
+                <option value="all">Any Rating</option>
+                <option value="4.8">4.8+</option>
+                <option value="4.9">4.9+</option>
+            </select>
+
+            <select id="directoryAvailability">
+                <option value="all">Any Availability</option>
+                <option value="available">Available Now</option>
+            </select>
+
+        </div>
+
+
+        <div class="freelancer-grid directory-grid" id="directoryGrid">
+            <!-- Generated by JS -->
+        </div>
+
+        <p class="empty-state hidden" id="directoryEmpty">
+            No freelancers match your search.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-content reveal">
+
+            <span class="section-label">ABOUT HIRELANCE</span>
+
+            <h2>
+                Built to connect
+                <span class="gradient-text">Talent with Opportunity.</span>
+            </h2>
+
+            <p>
+                HIRELANCE brings freelancers and employers together in
+                one professional ecosystem where people can showcase
+                their skills, discover opportunities and collaborate
+                on meaningful projects.
+            </p>
+
+            <p>
+                Whether you're a designer searching for your next client
+                or a startup looking for a developer, HIRELANCE is designed
+                to make the connection simple.
+            </p>
+
+            <button
+                class="btn btn-primary"
+                onclick="openAuth('signup')"
+            >
+                Join HIRELANCE →
+            </button>
+
+        </div>
+
+
+        <div class="about-visual reveal">
+
+            <div class="about-glow"></div>
+
+            <div class="about-card main-about-card">
+
+                <span class="mini-label">THE HIRELANCE NETWORK</span>
+
+                <div class="network-lines"></div>
+
+                <div class="network-center">
+                    HL
+                </div>
+
+                <div class="network-node node-1">🎨</div>
+                <div class="network-node node-2">💻</div>
+                <div class="network-node node-3">🎬</div>
+                <div class="network-node node-4">🚀</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container about-stats">
+
+        <div class="about-stat">
+            <strong class="counter" data-target="10000">0</strong>
+            <span>Freelancers</span>
+        </div>
+
+        <div class="about-stat">
+            <strong class="counter" data-target="5000">0</strong>
+            <span>Employers</span>
+        </div>
+
+        <div class="about-stat">
+            <strong class="counter" data-target="25000">0</strong>
+            <span>Gigs Completed</span>
+        </div>
+
+        <div class="about-stat">
+            <strong>₹50L+</strong>
+            <span>Earned by Freelancers</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIALS
+========================= -->
+
+<section class="section light-section">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">COMMUNITY STORIES</span>
+
+            <h2>
+                People are building
+                <span class="gradient-text">great things.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-container">
+
+            <button class="carousel-btn" id="prevTestimonial">
+                ‹
+            </button>
+
+            <div class="testimonial-card" id="testimonialCard">
+                <!-- JS -->
+            </div>
+
+            <button class="carousel-btn" id="nextTestimonial">
+                ›
+            </button>
+
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+
+            <span class="section-label">CONTACT US</span>
+
+            <h2>
+                Let's start a
+                <span class="gradient-text">conversation.</span>
+            </h2>
+
+            <p>
+                Have a question, partnership idea, or feedback?
+                We'd love to hear from you.
+            </p>
+
+            <div class="contact-details">
+
+                <div>
+                    <span>✉</span>
+                    <div>
+                        <small>Email</small>
+                        <strong>hello@hirelance.com</strong>
+                    </div>
+                </div>
+
+                <div>
+                    <span>☎</span>
+                    <div>
+                        <small>Phone</small>
+                        <strong>+91 98765 43210</strong>
+                    </div>
+                </div>
+
+                <div>
+                    <span>⌖</span>
+                    <div>
+                        <small>Location</small>
+                        <strong>New Delhi, India</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form reveal" id="contactForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input
+                        type="text"
+                        id="contactName"
+                        required
+                        placeholder="Your name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        required
+                        placeholder="you@example.com"
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="contactSubject">Subject</label>
+
+                <input
+                    type="text"
+                    id="contactSubject"
+                    required
+                    placeholder="How can we help?"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="contactMessage">Message</label>
+
+                <textarea
+                    id="contactMessage"
+                    rows="6"
+                    required
+                    placeholder="Tell us what's on your mind..."
+                ></textarea>
+
+            </div>
+
+            <button class="btn btn-primary full-width" type="submit">
+                Send Message →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                HIRE<span>LANCE</span>
+            </a>
+
+            <p>
+                Where Talent Meets Opportunity.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="X">𝕏</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Platform</h4>
+
+            <a href="#freelancers">Find Freelancers</a>
+            <a href="#gigs">Find Gigs</a>
+            <a href="#freelancers">Top Freelancers</a>
+            <a href="#employers">Top Employers</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Company</h4>
+
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>For Business</h4>
+
+            <a href="#" onclick="openAuth('signup','employer')">
+                Post a Gig
+            </a>
+
+            <a href="#directory">
+                Browse Talent
+            </a>
+
+            <a href="#gigs">
+                Explore Opportunities
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 HIRELANCE. All Rights Reserved.
+        </span>
+
+        <span>
+            Made for creators, professionals & dreamers.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING ACTION BUTTON
+========================= -->
+
+<button
+    class="floating-action"
+    id="floatingAction"
+    onclick="handleFloatingAction()"
+>
+    <span>＋</span>
+    <strong id="floatingActionText">Create Your Gig</strong>
+</button>
+
+
+<!-- =========================
+     AUTH MODAL
+========================= -->
+
+<div class="modal-overlay" id="authModal">
+
+    <div class="modal auth-modal">
+
+        <button class="modal-close" onclick="closeModal('authModal')">
+            ×
+        </button>
+
+        <div class="auth-header">
+
+            <div class="modal-logo">HL</div>
+
+            <h2 id="authTitle">Welcome Back</h2>
+
+            <p id="authSubtitle">
+                Login to continue to HIRELANCE.
+            </p>
+
+        </div>
+
+
+        <div class="auth-switch">
+
+            <button
+                class="auth-switch-btn active"
+                id="loginSwitch"
+                onclick="switchAuth('login')"
+            >
+                Login
+            </button>
+
+            <button
+                class="auth-switch-btn"
+                id="signupSwitch"
+                onclick="switchAuth('signup')"
+            >
+                Sign Up
+            </button>
+
+        </div>
+
+
+        <!-- Login -->
+
+        <form id="loginForm" class="auth-form">
+
+            <div class="account-type">
+
+                <button
+                    type="button"
+                    class="account-option active"
+                    data-type="freelancer"
+                >
+                    ✦ Freelancer
+                </button>
+
+                <button
+                    type="button"
+                    class="account-option"
+                    data-type="employer"
+                >
+                    ◈ Employer
+                </button>
+
+            </div>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email address"
+                required
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                required
+            >
+
+            <div class="form-inline">
+
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#" onclick="showToast('Password reset is simulated in this demo.')">
+                    Forgot password?
+                </a>
+
+            </div>
+
+            <button class="btn btn-primary full-width" type="submit">
+                Login →
+            </button>
+
+        </form>
+
+
+        <!-- Signup -->
+
+        <form id="signupForm" class="auth-form hidden">
+
+            <div class="account-type">
+
+                <button
+                    type="button"
+                    class="account-option active"
+                    data-type="freelancer"
+                >
+                    ✦ Freelancer
+                </button>
+
+                <button
+                    type="button"
+                    class="account-option"
+                    data-type="employer"
+                >
+                    ◈ Employer
+                </button>
+
+            </div>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Full name"
+                required
+            >
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email address"
+                required
+            >
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password"
+                required
+            >
+
+            <input
+                type="password"
+                id="signupConfirm"
+                placeholder="Confirm password"
+                required
+            >
+
+            <button class="btn btn-primary full-width" type="submit">
+                Create Account →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     PROFILE MODAL
+========================= -->
+
+<div class="modal-overlay" id="profileModal">
+
+    <div class="modal profile-modal">
+
+        <button class="modal-close" onclick="closeModal('profileModal')">
+            ×
+        </button>
+
+        <div id="profileModalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     CONTACT FREELANCER MODAL
+========================= -->
+
+<div class="modal-overlay" id="messageModal">
+
+    <div class="modal small-modal">
+
+        <button class="modal-close" onclick="closeModal('messageModal')">
+            ×
+        </button>
+
+        <div class="auth-header">
+
+            <div class="modal-logo">✉</div>
+
+            <h2>Send a Message</h2>
+
+            <p id="messageRecipient">
+                Contact freelancer
+            </p>
+
+        </div>
+
+        <form id="messageForm" class="auth-form">
+
+            <input
+                type="text"
+                id="messageSubject"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                id="messageBody"
+                rows="5"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button class="btn btn-primary full-width">
+                Send Message →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div class="toast" id="toast">
+
+    <span class="toast-icon">✓</span>
+
+    <div>
+        <strong id="toastTitle">Success</strong>
+        <p id="toastMessage">Action completed.</p>
+    </div>
+
+</div>
+
+
+<!-- =========================
+     DASHBOARD
+========================= -->
+
+<div class="dashboard-overlay" id="dashboard">
+
+    <div class="dashboard">
+
+        <aside class="dashboard-sidebar">
+
+            <div class="dashboard-logo">
+                HIRE<span>LANCE</span>
+            </div>
+
+            <div class="dashboard-user">
+
+                <div class="dashboard-avatar" id="dashboardAvatar">
+                    U
+                </div>
+
+                <div>
+                    <strong id="dashboardName">User</strong>
+                    <small id="dashboardRole">Freelancer</small>
+                </div>
+
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a class="active" href="#">
+                    <span>⌂</span> Overview
+                </a>
+
+                <a href="#">
+                    <span>✦</span>
+                    <span id="dashboardNavPrimary">My Gigs</span>
+                </a>
+
+                <a href="#">
+                    <span>▣</span> Applications
+                </a>
+
+                <a href="#">
+                    <span>◉</span> Messages
+                    <b>3</b>
+                </a>
+
+                <a href="#">
+                    <span>♡</span> Saved
+                </a>
+
+                <a href="#">
+                    <span>⚙</span> Settings
+                </a>
+
+            </nav>
+
+            <button class="logout-btn" onclick="logout()">
+                ↪ Logout
+            </button>
+
+        </aside>
+
+
+        <section class="dashboard-main">
+
+            <div class="dashboard-topbar">
+
+                <div>
+
+                    <button
+                        class="dashboard-mobile-close"
+                        onclick="closeDashboard()"
+                    >
+                        ←
+                    </button>
+
+                    <h1 id="dashboardGreeting">
+                        Good evening 👋
+                    </h1>
+
+                    <p id="dashboardSubtitle">
+                        Here's what's happening with your account.
+                    </p>
+
+                </div>
+
+                <div class="dashboard-actions">
+
+                    <button class="dashboard-icon">
+                        ♧
+                        <i></i>
+                    </button>
+
+                    <button class="dashboard-icon">
+                        ✉
+                    </button>
+
+                    <div class="mini-avatar" id="dashboardTopAvatar">
+                        U
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-cards" id="dashboardCards">
+                <!-- JS -->
+            </div>
+
+
+            <div class="dashboard-content-grid">
+
+                <div class="dashboard-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h3>Recent Activity</h3>
+                            <p>Your latest marketplace activity.</p>
+                        </div>
+
+                        <button>View All</button>
+
+                    </div>
+
+                    <div class="activity-list">
+
+                        <div class="activity">
+                            <span class="activity-icon purple-icon">✓</span>
+                            <div>
+                                <strong>Profile viewed</strong>
+                                <small>Someone viewed your profile</small>
+                            </div>
+                            <time>2m</time>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-icon green-icon">₹</span>
+                            <div>
+                                <strong>Payment received</strong>
+                                <small>Project payment completed</small>
+                            </div>
+                            <time>3h</time>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-icon orange-icon">✦</span>
+                            <div>
+                                <strong>New opportunity</strong>
+                                <small>A gig matches your skills</small>
+                            </div>
+                            <time>1d</time>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h3>Quick Actions</h3>
+                            <p>Get things done faster.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="quick-actions">
+
+                        <button onclick="showToast('Gig creation interface opened.')">
+                            <span>＋</span>
+                            <strong id="quickPrimary">
+                                Create Gig
+                            </strong>
+                        </button>
+
+                        <button onclick="scrollToSection('directory'); closeDashboard();">
+                            <span>⌕</span>
+                            <strong>Browse Talent</strong>
+                        </button>
+
+                        <button onclick="showToast('Portfolio editor opened.')">
+                            <span>▣</span>
+                            <strong>Edit Portfolio</strong>
+                        </button>
+
+                        <button onclick="showToast('Messages opened.')">
+                            <span>✉</span>
+                            <strong>Messages</strong>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</div>
+
+
+<script src="Draft1.js"></script>
+
+</body>
+</html>
